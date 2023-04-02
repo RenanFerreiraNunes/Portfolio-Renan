@@ -28,14 +28,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Portfólio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse gap-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -50,6 +50,12 @@
                         <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input cursor-pointer" type="checkbox" id="switch-dark-mode">
+                    <label class="form-check-label" for="switch-dark-mode">
+                    </label>
+                </div>
             </div>
         </div>
     </nav>
@@ -63,7 +69,6 @@
         </article>
     </main>
 
-
     <main class="container">
 
         <h2 class="text-center my-5">O que nós fazemos?</h2>
@@ -71,7 +76,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
                 <i class="fa-solid fa-palette fa-2xl" id="logo1"></i>
                 <h3 class="mt-4">Designs elegantes</h3>
-                <p>
+                <p class="conteudo">
                     Trabalhamos para várias empresas de nome do país, a oferecemos layouts responsivos e elegantes, com
                     paletas de cores minimalistas e exuberantes
                 </p>
@@ -79,7 +84,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
                 <i class="fa-solid fa-camera fa-2xl" id="logo2"></i>
                 <h3 class="mt-4">Identidade visual</h3>
-                <p>
+                <p class="conteudo">
                     Oferecemos também um pacote com a sua identidade visual, para post no instagram, facebook e
                     twittter, para que você possa atrair mais clientes e vender seus produtos!
                 </p>
@@ -87,7 +92,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
                 <i class="fa-solid fa-image fa-2xl" id="logo3"></i>
                 <h3 class="mt-4">Edição de imagens</h3>
-                <p>
+                <p class="conteudo">
                     Precisa de panfletos chamativos? Aqui nós te oferecemos um pacote de panfletos com as suas
                     preferências, para que você alavanque suas vendas!
                 </p>
@@ -95,7 +100,7 @@
             <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
                 <i class="fa-solid fa-laptop fa-2xl" id="logo4"></i>
                 <h3 class="mt-4">Criação de sites</h3>
-                <p>
+                <p class="conteudo">
                     Essa é a nossa especialidade! Precisa de um site responsivo e elegante? Com o nosso pacote Web nós
                     criamos para você. Criamos portfólios, marketplace, blogs pessoais, sites instucionais e por aí vai!
                 </p>
@@ -181,6 +186,9 @@
 
     <!--Ícones-->
     <script src="https://kit.fontawesome.com/98a2db0df8.js" crossorigin="anonymous"></script>
+
+    <!--Js-->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

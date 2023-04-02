@@ -1,5 +1,32 @@
 /*Inicio do banner*/
 
+/* Estilo do scroll quando não estiver sendo usado */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo do thumb (controlador do scroll) */
+  ::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* Estilo do thumb quando o mouse passar sobre ele */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: all 0.4s linear;
+}
+
 .banner {
     margin: 0px !important;
     padding: 0px !important;
@@ -69,7 +96,6 @@
     opacity: 0.8;
 }
 
-
 img {
     transition: all 0.4s;
 }
@@ -86,10 +112,31 @@ img:hover {
     opacity: 0.9;
     border-bottom: 1px solid #fff;
 }
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+  
+
 /*Fim de projeto*/
 
 @media (max-width: 768px) {
     .banner article h1 {
         font-size: 2.6rem;
     }
+
+    .conteudo {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
 }
+
+
